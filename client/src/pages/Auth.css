@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+.auth-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0F2044 0%, #1A4FBD 100%);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Sora', sans-serif;
+  padding: 24px;
+}
+
+.auth-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 36px 40px;
+  width: 100%; max-width: 480px;
+  box-shadow: 0 24px 60px rgba(15,32,68,.35);
+}
+
+.auth-logo {
+  font-size: 36px; text-align: center; margin-bottom: 8px;
+}
+.auth-title {
+  font-size: 20px; font-weight: 700; color: #0F172A;
+  text-align: center; letter-spacing: -.3px;
+}
+.auth-sub {
+  font-size: 12px; color: #94A3B8; text-align: center; margin-bottom: 24px;
+}
+
+.auth-tabs {
+  display: flex; gap: 4px;
+  background: #F1F5F9; border-radius: 8px;
+  padding: 4px; margin-bottom: 24px;
+}
+.auth-tabs button {
+  flex: 1; padding: 8px; border: none; background: transparent;
+  border-radius: 6px; font-size: 13px; font-weight: 500;
+  font-family: 'Sora', sans-serif; cursor: pointer; color: #64748B;
+  transition: all .15s;
+}
+.auth-tabs button.active {
+  background: #fff; color: #0F172A;
+  box-shadow: 0 1px 4px rgba(0,0,0,.1);
+}
+
+.auth-form { display: flex; flex-direction: column; gap: 14px; }
+
+.field-group { display: flex; flex-direction: column; gap: 5px; }
+.field-group label { font-size: 11px; font-weight: 600; color: #64748B; text-transform: uppercase; letter-spacing: .4px; }
+.field-group input {
+  border: 1px solid #E2E8F0; border-radius: 8px;
+  padding: 10px 12px; font-size: 13px;
+  font-family: 'Sora', sans-serif; color: #0F172A;
+  transition: border-color .15s;
+}
+.field-group input:focus { outline: none; border-color: #1A4FBD; }
+
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.auth-error {
+  background: #FEE2E2; color: #991B1B;
+  border-radius: 8px; padding: 10px 14px;
+  font-size: 12px; font-weight: 500;
+}
+
+.auth-btn {
+  background: #1A4FBD; color: #fff;
+  border: none; border-radius: 8px;
+  padding: 12px; font-size: 14px; font-weight: 600;
+  font-family: 'Sora', sans-serif; cursor: pointer;
+  margin-top: 4px; transition: all .15s;
+}
+.auth-btn:hover:not(:disabled) { background: #1640A0; transform: translateY(-1px); }
+.auth-btn:disabled { opacity: .6; cursor: not-allowed; }
