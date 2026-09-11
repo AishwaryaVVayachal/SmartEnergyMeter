@@ -19,7 +19,7 @@ const ReadingSchema = new mongoose.Schema({
   // 'mock'     = server-generated placeholder (no device connected)
   source: { type: String, enum: ['esp','sim','mock'], default: 'mock' },
  
-  timestamp: { type: Date, default: Date.now, index: true },
+  timestamp: { type: Date, default: Date.now },
 });
  
 // TTL: auto-delete raw readings older than 180 days (keeps DB small)
